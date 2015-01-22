@@ -1,14 +1,15 @@
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.List;
 
 public class UniformCostSearcher {
 
-    static final String inputFilePath = "./terrain.png";
-    static final String outputFilePath = "./path.png";
+    static final String inputFilePath = "UniformCostSearch/src/terrain.png";
+    static final String outputFilePath = "UniformCostSearch/src/path.png";
 
     public static void main(String[] args){
 
@@ -20,8 +21,6 @@ public class UniformCostSearcher {
             e.printStackTrace();
         }
 
-        byte[] terrain =
-                ((DataBufferByte)bufferedImage.getRaster().getDataBuffer()).getData();
         int width = bufferedImage.getWidth();
         int height = bufferedImage.getHeight();
 
@@ -36,7 +35,9 @@ public class UniformCostSearcher {
         final UcsState startState = states[100][100];
         final UcsState endState = states[400][400];
 
-        coloredUniformCostSearch(bufferedImage, states, startState, endState, width, height, terrain);
+        coloredUniformCostSearch(bufferedImage, states, startState, endState, width, height);
+
+        colorShortestPath(bufferedImage, startState, endState);
 
         File output = new File(outputFilePath);
         try{
@@ -47,7 +48,7 @@ public class UniformCostSearcher {
 
     }
 
-    private static UcsState coloredUniformCostSearch(BufferedImage image, UcsState[][] states, UcsState startState, UcsState endState, int width, int height, byte[] terrain){
+    private static UcsState coloredUniformCostSearch(BufferedImage image, UcsState[][] states, UcsState startState, UcsState endState, int width, int height){
         PriorityQueue<UcsState> frontier = new PriorityQueue<UcsState>(width*height, new UcsStateCostComparator());
         Set<UcsState> visited = new HashSet<UcsState>();
 
@@ -66,7 +67,7 @@ public class UniformCostSearcher {
             List<UcsState> children = getChildren(states, curState, width, height);
 
             for(UcsState child : children){
-                int transitionCost = getGreen(terrain, child.x, child.y, width);
+                int transitionCost = getGreen(image, child.x, child.y);
 
                 if(visited.contains(child)){
                     if(curState.cost + transitionCost < child.cost){
@@ -79,16 +80,25 @@ public class UniformCostSearcher {
                     child.parent = curState;
                     frontier.add(child);
                 }
+                visited.add(child);
             }
 
             if(iterations%5000 < 1000){
-                setGreen(image, terrain, width, curState.x, curState.y, 255);
+                colorGreen(image, curState.x, curState.y);
             }
             iterations++;
         }
         throw new RuntimeException("Shit");
     }
 
+    private static void colorShortestPath(BufferedImage image, UcsState startState, UcsState endState){
+        UcsState curState = endState;
+        while(!curState.equals(startState)){
+            colorRed(image, curState.x, curState.y);
+            curState = curState.parent;
+        }
+        colorRed(image, curState.x, curState.y);
+    }
 
     private static List<UcsState> getChildren (UcsState[][] states, UcsState parent, int width, int height){
         List<UcsState> children = new ArrayList<UcsState>();
@@ -105,37 +115,17 @@ public class UniformCostSearcher {
         return children;
     }
 
-    private static int getAlpha(byte[] terrain, int x, int y, int width){
-        int channel_count = 4;
-        int alpha_channel = 0; // 0=alpha, 1=blue, 2=green, 3=red
-        return terrain[channel_count * (y * width + x) + alpha_channel];
+    private static int getGreen(BufferedImage image, int x, int y){
+        Color c = new Color(image.getRGB(x, y));
+        return c.getGreen();
     }
 
-    private static int getRed(byte[] terrain, int x, int y, int width){
-        int channel_count = 4;
-        int red_channel = 3; // 0=alpha, 1=blue, 2=green, 3=red
-        return terrain[channel_count * (y * width + x) + red_channel];
+    private static void colorGreen(BufferedImage image, int x, int y){
+        image.setRGB(x, y, 0xFF00FF00);
     }
 
-    private static int getGreen(byte[] terrain, int x, int y, int width){
-        int channel_count = 4;
-        int green_channel = 2; // 0=alpha, 1=blue, 2=green, 3=red
-        return terrain[channel_count * (y * width + x) + green_channel];
-    }
-
-    private static int getBlue(byte[] terrain, int x, int y, int width){
-        int channel_count = 4;
-        int blue_channel = 1; // 0=alpha, 1=blue, 2=green, 3=red
-        return terrain[channel_count * (y * width + x) + blue_channel];
-    }
-
-    private static void setGreen(BufferedImage image, byte[] terrain, int width, int x, int y, int green){
-        int r = getRed(terrain, x, y, width);
-        int b = getBlue(terrain, x, y, width);
-        int a = getAlpha(terrain, x, y, width);
-        int color = (a <<24) | (r << 16) | (green << 8) | b;
-
-        image.setRGB(x, y, color);
+    private static void colorRed(BufferedImage image, int x, int y){
+        image.setRGB(x, y, 0xFFFF0000);
     }
 
 
