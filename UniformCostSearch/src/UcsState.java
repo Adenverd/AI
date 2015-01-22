@@ -12,5 +12,14 @@ public class UcsState {
         this.x = x;
         this.y = y;
     }
+
+    @Override
+    public boolean equals(Object o){
+        if (o instanceof UcsState){
+            UcsState other = (UcsState) o;
+            return (x == other.x) && (y == other.y);
+        }
+        return false;
+    }
 }
 

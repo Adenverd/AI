@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da224e4d-de9f-4655-817f-cf68c82fd883" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniformCostSearch/src/UcsState.java" afterPath="$PROJECT_DIR$/UniformCostSearch/src/UcsState.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java" afterPath="$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java" />
     </list>
     <ignored path="AI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421870348125" ignored="false" />
+    <file path="/Dummy.txt" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421901158570" ignored="false" />
     <file path="/Image.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421802426529" ignored="false" />
-    <file path="/UniformCostSearcher.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421805362491" ignored="false" />
-    <file path="/UcsState.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421805137949" ignored="false" />
+    <file path="/UniformCostSearcher.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421904576941" ignored="false" />
+    <file path="/UcsState.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421901531071" ignored="false" />
     <file path="/CostComparator.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421805335343" ignored="false" />
+    <file path="/fragment.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421902599674" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,10 +76,12 @@
       <file leaf-file-name="UniformCostSearcher.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.69942194">
+            <state line="10" column="54" selection-start="322" selection-end="322" vertical-scroll-proportion="0.17767988">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1161#1171#0" expanded="true" />
+                <element signature="e#1680#1690#0" expanded="true" />
+                <element signature="e#1779#1789#0" expanded="true" />
+                <element signature="e#3197#3207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +90,7 @@
       <file leaf-file-name="UcsState.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UcsState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+            <state line="10" column="29" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,9 +124,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/U/src/Image.java" />
-        <option value="$PROJECT_DIR$/UniformCostSearch/src/UcsState.java" />
         <option value="$PROJECT_DIR$/UniformCostSearch/src/CostComparator.java" />
         <option value="$PROJECT_DIR$/UniformCostSearch/src/UcsStateCostComparator.java" />
+        <option value="$PROJECT_DIR$/UniformCostSearch/src/UcsState.java" />
         <option value="$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java" />
       </list>
     </option>
@@ -159,6 +163,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,7 +248,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -261,8 +265,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -277,19 +281,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -317,6 +308,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -389,15 +393,14 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -406,8 +409,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -471,18 +475,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/jdk1.7.0_71/src.zip!/java/io/IOException.java">
+    <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="0.33236995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/U/src/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="191" selection-end="191" vertical-scroll-proportion="0.22109826">
+        <state line="34" column="21" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1680#1690#0" expanded="true" />
+            <element signature="e#1779#1789#0" expanded="true" />
+            <element signature="e#3197#3207#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -501,12 +501,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
+    <entry file="jar://C:/jdk1.7.0_71/src.zip!/java/io/IOException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.69942194">
+        <state line="38" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="0.33236995" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/U/src/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="191" selection-end="191" vertical-scroll-proportion="0.22109826">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1161#1171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UcsStateCostComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UcsState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="322" selection-end="322" vertical-scroll-proportion="0.17767988">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1680#1690#0" expanded="true" />
+            <element signature="e#1779#1789#0" expanded="true" />
+            <element signature="e#3197#3207#0" expanded="true" />
           </folding>
         </state>
       </provider>
