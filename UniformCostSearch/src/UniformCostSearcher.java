@@ -32,7 +32,7 @@ public class UniformCostSearcher {
 
     private static void coloredUniformCostSearch(BufferedImage image, UcsState startState, UcsState endState, int width, int height, byte[] terrain){
         PriorityQueue<UcsState> frontier = new PriorityQueue<UcsState>(width*height, new UcsStateCostComparator());
-        Set<UcsState> 
+        Set<UcsState>
 
 
     }

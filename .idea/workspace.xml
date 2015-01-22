@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da224e4d-de9f-4655-817f-cf68c82fd883" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/U/src/Image.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/U/U.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UniformCostSearch/src/UcsState.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UniformCostSearch/src/UcsStateCostComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UniformCostSearch/UniformCostSearch.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java" afterPath="$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java" />
     </list>
     <ignored path="AI.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421800346924" ignored="false" />
+    <file path="/Dummy.txt" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421870348125" ignored="false" />
     <file path="/Image.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421802426529" ignored="false" />
     <file path="/UniformCostSearcher.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421805362491" ignored="false" />
     <file path="/UcsState.java" changelist="da224e4d-de9f-4655-817f-cf68c82fd883" time="1421805137949" ignored="false" />
@@ -79,7 +74,7 @@
       <file leaf-file-name="UniformCostSearcher.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="22" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.69942194">
+            <state line="34" column="21" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.69942194">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1161#1171#0" expanded="true" />
@@ -508,7 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.69942194">
+        <state line="34" column="21" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.69942194">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1161#1171#0" expanded="true" />
