@@ -61,21 +61,18 @@ public class AstarSearcher {
     private static PuzzleState AstarPuzzle(PuzzleState startState){
         int pops = 0;
         Queue<PuzzleState> frontier = new PriorityQueue<PuzzleState>(100000, new StateHeuristicComparator());
-        Map<PuzzleState, Double> frontierTree = new TreeMap<PuzzleState, Double>(new StateHeuristicComparator()); //g_scores
-        Set<PuzzleState> visited = new HashSet<PuzzleState>();
+        Map<PuzzleState, Double> visited = new HashMap<PuzzleState, Double>();
 
         startState.cost = 0d;
         startState.parent = null;
         startState.heuristic = manhattanDistance(startState.rowPieceOffsets[0], startState.columnPieceOffsets[0], -2, 4);
 
         frontier.add(startState);
-        frontierTree.put(startState, startState.cost);
-        visited.add(startState);
+        visited.put(startState, startState.cost);
 
         while(!frontier.isEmpty()){
             PuzzleState curState = frontier.poll();
-            frontierTree.remove(curState);
-            visited.add(curState);
+            visited.put(curState, curState.cost);
 
             int size = frontier.size();
             pops++;
@@ -91,26 +88,22 @@ public class AstarSearcher {
                 for(PuzzleState.Direction direction : PuzzleState.Direction.values()){
                     PuzzleState childState = curState.tryMove(piece, direction);
                     if(childState != null){
-                        if(visited.contains(childState)) continue;
-
-                        boolean inFrontier = frontierTree.containsKey(childState);
-                        if(!inFrontier || curState.cost + 1d < frontierTree.get(childState)){
+                        if(visited.containsKey(childState)){
+                            if (curState.cost + 1d < visited.get(childState)){
+                                childState.parent = curState;
+                                childState.cost = curState.cost + 1d;
+                                childState.heuristic = manhattanDistance(childState.rowPieceOffsets[0], childState.columnPieceOffsets[0], -2, 4);
+                                frontier.add(childState);
+                            }
+                        }
+                        else{
                             childState.parent = curState;
                             childState.cost = curState.cost + 1d;
                             childState.heuristic = manhattanDistance(childState.rowPieceOffsets[0], childState.columnPieceOffsets[0], -2, 4);
-                            if(inFrontier){
-                                frontier.remove(childState);
-                                frontierTree.remove(childState);
-                            }
                             frontier.add(childState);
-                            frontierTree.put(childState, curState.cost + 1d);
                         }
                     }
                 }
-            }
-
-            if (size == frontier.size()) {
-                int mer = 5;
             }
         }
         throw new RuntimeException("Shit");
