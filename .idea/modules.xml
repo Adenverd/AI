@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AI.iml" filepath="$PROJECT_DIR$/AI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AstarSearch/AstarSearch.iml" filepath="$PROJECT_DIR$/AstarSearch/AstarSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/U/U.iml" filepath="$PROJECT_DIR$/U/U.iml" />
       <module fileurl="file://$PROJECT_DIR$/UniformCostSearch/UniformCostSearch.iml" filepath="$PROJECT_DIR$/UniformCostSearch/UniformCostSearch.iml" />
     </modules>
   </component>
 </project>
-

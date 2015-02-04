@@ -28,7 +28,7 @@ public class UniformCostSearcher {
 
         for(int x = 0; x < width; x++){
             for(int y = 0; y < height; y++){
-                states[x][y] = new UcsState(Double.MAX_VALUE, null, x, y);
+                states[x][y] = new UcsState(Double.MAX_VALUE, Double.MAX_VALUE, null, x, y);
             }
         }
 
@@ -49,7 +49,7 @@ public class UniformCostSearcher {
     }
 
     private static UcsState coloredUniformCostSearch(BufferedImage image, UcsState[][] states, UcsState startState, UcsState endState, int width, int height){
-        PriorityQueue<UcsState> frontier = new PriorityQueue<UcsState>(width*height, new UcsStateCostComparator());
+        PriorityQueue<UcsState> frontier = new PriorityQueue<UcsState>(width*height, new StateCostComparator());
         Set<UcsState> visited = new HashSet<UcsState>();
 
         startState.cost = 0.0;
@@ -95,7 +95,7 @@ public class UniformCostSearcher {
         UcsState curState = endState;
         while(!curState.equals(startState)){
             colorRed(image, curState.x, curState.y);
-            curState = curState.parent;
+            curState =(UcsState) curState.parent;
         }
         colorRed(image, curState.x, curState.y);
     }
