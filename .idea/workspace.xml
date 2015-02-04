@@ -103,11 +103,10 @@
       <file leaf-file-name="PuzzleState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AstarSearch/src/PuzzleState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="3434">
+              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#tryMove#0;class#PuzzleState#0" expanded="false" />
                 <element signature="e#3795#3796#0" expanded="true" />
                 <element signature="e#3882#3883#0" expanded="true" />
                 <element signature="method#isValidMove#0;class#PuzzleState#0" expanded="false" />
@@ -121,24 +120,25 @@
       <file leaf-file-name="AstarSearcher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AstarSearch/src/AstarSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.27195945" vertical-offset="739" max-vertical-offset="4437">
-              <caret line="63" column="40" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="40" />
+            <state vertical-scroll-proportion="-0.23488773" vertical-offset="459" max-vertical-offset="3638">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#compareOnImage#0;class#AstarSearcher#0" expanded="false" />
-                <element signature="e#1946#1959#0" expanded="true" />
-                <element signature="e#2055#2076#0" expanded="true" />
-                <element signature="e#4274#4287#0" expanded="true" />
-                <element signature="e#4337#4350#0" expanded="true" />
-                <element signature="e#5909#5919#0" expanded="true" />
-                <element signature="e#6010#6020#0" expanded="true" />
-                <element signature="e#7520#7530#0" expanded="true" />
-                <element signature="e#7616#7626#0" expanded="true" />
-                <element signature="e#9303#9313#0" expanded="true" />
-                <element signature="e#9957#9958#0" expanded="true" />
-                <element signature="e#10003#10004#0" expanded="true" />
-                <element signature="e#10073#10074#0" expanded="true" />
-                <element signature="e#10119#10120#0" expanded="true" />
+                <element signature="method#AstarPuzzle#0;class#AstarSearcher#0" expanded="false" />
+                <element signature="e#1949#1962#0" expanded="true" />
+                <element signature="e#2058#2079#0" expanded="true" />
+                <element signature="e#3990#4003#0" expanded="true" />
+                <element signature="e#4061#4082#0" expanded="true" />
+                <element signature="e#5912#5922#0" expanded="true" />
+                <element signature="e#6013#6023#0" expanded="true" />
+                <element signature="e#7523#7533#0" expanded="true" />
+                <element signature="e#7619#7629#0" expanded="true" />
+                <element signature="e#9306#9316#0" expanded="true" />
+                <element signature="e#9960#9961#0" expanded="true" />
+                <element signature="e#10006#10007#0" expanded="true" />
+                <element signature="e#10076#10077#0" expanded="true" />
+                <element signature="e#10122#10123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -716,12 +716,12 @@
       <created>1421800224527</created>
       <option name="number" value="Default" />
       <updated>1421800224527</updated>
-      <workItem from="1422997343596" duration="32833000" />
+      <workItem from="1422997343596" duration="33918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32833000" />
+    <option name="totallyTimeSpent" value="33918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -790,30 +790,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/AstarSearch/src/AstarSearcher.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/AstarSearch/src/AstarSearcher.java</url>
-          <line>199</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/AstarSearch/src/AstarSearcher.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/AstarSearch/src/AstarSearcher.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="105" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -989,11 +971,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AstarSearch/src/PuzzleState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="3434">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#tryMove#0;class#PuzzleState#0" expanded="false" />
             <element signature="e#3795#3796#0" expanded="true" />
             <element signature="e#3882#3883#0" expanded="true" />
             <element signature="method#isValidMove#0;class#PuzzleState#0" expanded="false" />
@@ -1005,24 +986,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AstarSearch/src/AstarSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.27195945" vertical-offset="739" max-vertical-offset="4437">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="40" />
+        <state vertical-scroll-proportion="-0.23488773" vertical-offset="459" max-vertical-offset="3638">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#compareOnImage#0;class#AstarSearcher#0" expanded="false" />
-            <element signature="e#1946#1959#0" expanded="true" />
-            <element signature="e#2055#2076#0" expanded="true" />
-            <element signature="e#4274#4287#0" expanded="true" />
-            <element signature="e#4337#4350#0" expanded="true" />
-            <element signature="e#5909#5919#0" expanded="true" />
-            <element signature="e#6010#6020#0" expanded="true" />
-            <element signature="e#7520#7530#0" expanded="true" />
-            <element signature="e#7616#7626#0" expanded="true" />
-            <element signature="e#9303#9313#0" expanded="true" />
-            <element signature="e#9957#9958#0" expanded="true" />
-            <element signature="e#10003#10004#0" expanded="true" />
-            <element signature="e#10073#10074#0" expanded="true" />
-            <element signature="e#10119#10120#0" expanded="true" />
+            <element signature="method#AstarPuzzle#0;class#AstarSearcher#0" expanded="false" />
+            <element signature="e#1949#1962#0" expanded="true" />
+            <element signature="e#2058#2079#0" expanded="true" />
+            <element signature="e#3990#4003#0" expanded="true" />
+            <element signature="e#4061#4082#0" expanded="true" />
+            <element signature="e#5912#5922#0" expanded="true" />
+            <element signature="e#6013#6023#0" expanded="true" />
+            <element signature="e#7523#7533#0" expanded="true" />
+            <element signature="e#7619#7629#0" expanded="true" />
+            <element signature="e#9306#9316#0" expanded="true" />
+            <element signature="e#9960#9961#0" expanded="true" />
+            <element signature="e#10006#10007#0" expanded="true" />
+            <element signature="e#10076#10077#0" expanded="true" />
+            <element signature="e#10122#10123#0" expanded="true" />
           </folding>
         </state>
       </provider>

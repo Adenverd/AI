@@ -17,9 +17,9 @@ public class AstarSearcher {
 
     public static void compareOnPuzzle(){
         PuzzleState startState = new PuzzleState();
-        //PuzzleState ucsFinalState = UcsPuzzle(startState);
-        startState = new PuzzleState();
-        PuzzleState AstarFinalState = AstarPuzzle(startState);
+        PuzzleState ucsFinalState = UcsPuzzle(startState);
+        //startState = new PuzzleState();
+        //PuzzleState AstarFinalState = AstarPuzzle(startState);
 
         int x = 0;
     }
@@ -58,7 +58,7 @@ public class AstarSearcher {
     /*
         Status: shit's broken. Frontier is growing way faster than pops, which isn't right.
      */
-    private static PuzzleState AstarPuzzle(PuzzleState startState){
+    private static PuzzleState AstarPuzzle(PuzzleState startState) {
         int pops = 0;
         Queue<PuzzleState> frontier = new PriorityQueue<PuzzleState>(100000, new StateHeuristicComparator());
         Map<PuzzleState, Double> visited = new HashMap<PuzzleState, Double>();
@@ -68,38 +68,33 @@ public class AstarSearcher {
         startState.heuristic = manhattanDistance(startState.rowPieceOffsets[0], startState.columnPieceOffsets[0], -2, 4);
 
         frontier.add(startState);
-        visited.put(startState, startState.cost);
+        visited.put(startState, 0.);
 
-        while(!frontier.isEmpty()){
+        while (!frontier.isEmpty()) {
             PuzzleState curState = frontier.poll();
-            visited.put(curState, curState.cost);
 
             pops++;
-            if(pops%20000 == 0){
+            if (pops % 20000 == 0) {
                 System.out.println(pops + " " + curState.cost + " " + frontier.size());
             }
-            if (curState.isSolved()){
+            if (curState.isSolved()) {
                 System.out.println("bfs2=" + pops);
                 return curState;
             }
 
-            for(int piece = 0; piece < 11; piece++){
-                for(PuzzleState.Direction direction : PuzzleState.Direction.values()){
+            for (int piece = 0; piece < 11; piece++) {
+                for (PuzzleState.Direction direction : PuzzleState.Direction.values()) {
                     PuzzleState childState = curState.tryMove(piece, direction);
-                    if(childState != null){
-                        if(visited.containsKey(childState)){
-                            if (curState.cost + 1d < visited.get(childState)){
-                                frontier.remove(childState);
-                                childState.parent = curState;
-                                childState.cost = curState.cost + 1d;
-                                childState.heuristic = manhattanDistance(childState.rowPieceOffsets[0], childState.columnPieceOffsets[0], -2, 4);
-                                frontier.add(childState);
-                            }
-                        }
-                        else{
+                    if (childState != null) {
+                        double newCost = visited.get(curState) + 1;
+                        if (!visited.containsKey(childState) || newCost < visited.get(childState)) {
                             childState.parent = curState;
-                            childState.cost = curState.cost + 1d;
+                            childState.cost = newCost;
                             childState.heuristic = manhattanDistance(childState.rowPieceOffsets[0], childState.columnPieceOffsets[0], -2, 4);
+                            if (visited.containsKey(childState)) {
+                                frontier.remove(childState);
+                            }
+                            visited.put(childState, childState.cost);
                             frontier.add(childState);
                         }
                     }
@@ -112,43 +107,45 @@ public class AstarSearcher {
     private static PuzzleState UcsPuzzle(PuzzleState startState){
         int pops = 0;
         Queue<PuzzleState> frontier = new LinkedList<PuzzleState>();
-        Set<PuzzleState> visited = new HashSet<PuzzleState>();
+        Map<PuzzleState, Double> visited = new HashMap<PuzzleState, Double>();
 
-        startState.cost = 0.0;
+        startState.cost = 0d;
         startState.parent = null;
+        startState.heuristic = 1;
 
         frontier.add(startState);
-        visited.add(startState);
+        visited.put(startState, 0.);
 
-        while(!frontier.isEmpty()){
+        while (!frontier.isEmpty()) {
             PuzzleState curState = frontier.poll();
-            int size = frontier.size();
+
             pops++;
-            if(pops%20000 == 0){
+            if (pops % 20000 == 0) {
                 System.out.println(pops + " " + curState.cost + " " + frontier.size());
             }
-            if (curState.isSolved()){
+            if (curState.isSolved()) {
                 System.out.println("bfs2=" + pops);
                 return curState;
             }
 
-            for(int piece = 0; piece < 11; piece++){
-                for(PuzzleState.Direction direction : PuzzleState.Direction.values()){
+            for (int piece = 0; piece < 11; piece++) {
+                for (PuzzleState.Direction direction : PuzzleState.Direction.values()) {
                     PuzzleState childState = curState.tryMove(piece, direction);
-                    if(childState != null){
-                        if(!visited.contains(childState)) {
+                    if (childState != null) {
+                        double newCost = visited.get(curState) + 1;
+                        if (!visited.containsKey(childState) || newCost < visited.get(childState)) {
                             childState.parent = curState;
-                            childState.cost = curState.cost + 1;
+                            childState.cost = newCost;
+                            childState.heuristic = 1;
+                            if (visited.containsKey(childState)) {
+                                frontier.remove(childState);
+                            }
+                            visited.put(childState, childState.cost);
                             frontier.add(childState);
                         }
                     }
                 }
             }
-
-            if (size == frontier.size()){
-                int mer = 5;
-            }
-            visited.add(curState);
         }
         throw new RuntimeException("Shit");
     }
