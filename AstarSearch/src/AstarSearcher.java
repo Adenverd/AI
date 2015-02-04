@@ -74,7 +74,6 @@ public class AstarSearcher {
             PuzzleState curState = frontier.poll();
             visited.put(curState, curState.cost);
 
-            int size = frontier.size();
             pops++;
             if(pops%20000 == 0){
                 System.out.println(pops + " " + curState.cost + " " + frontier.size());
@@ -90,6 +89,7 @@ public class AstarSearcher {
                     if(childState != null){
                         if(visited.containsKey(childState)){
                             if (curState.cost + 1d < visited.get(childState)){
+                                frontier.remove(childState);
                                 childState.parent = curState;
                                 childState.cost = curState.cost + 1d;
                                 childState.heuristic = manhattanDistance(childState.rowPieceOffsets[0], childState.columnPieceOffsets[0], -2, 4);
