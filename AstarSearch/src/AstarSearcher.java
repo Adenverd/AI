@@ -10,18 +10,15 @@ public class AstarSearcher {
     static final String inputFilePath = "AstarSearch/src/terrain.png";
 
     public static void main(String[] args){
-        //compareOnImage();
-        //System.out.println(new PuzzleState());
+        compareOnImage();
         compareOnPuzzle();
     }
 
     public static void compareOnPuzzle(){
         PuzzleState startState = new PuzzleState();
         PuzzleState ucsFinalState = UcsPuzzle(startState);
-        //startState = new PuzzleState();
-        //PuzzleState AstarFinalState = AstarPuzzle(startState);
-
-        int x = 0;
+        startState = new PuzzleState();
+        PuzzleState AstarFinalState = AstarPuzzle(startState);
     }
 
     public static void compareOnImage(){
@@ -74,11 +71,11 @@ public class AstarSearcher {
             PuzzleState curState = frontier.poll();
 
             pops++;
-            if (pops % 20000 == 0) {
-                System.out.println(pops + " " + curState.cost + " " + frontier.size());
-            }
+//            if (pops % 20000 == 0) {
+//                System.out.println(pops + " " + curState.cost + " " + frontier.size());
+//            }
             if (curState.isSolved()) {
-                System.out.println("bfs2=" + pops);
+                System.out.println("astar2=" + pops);
                 return curState;
             }
 
@@ -120,9 +117,9 @@ public class AstarSearcher {
             PuzzleState curState = frontier.poll();
 
             pops++;
-            if (pops % 20000 == 0) {
-                System.out.println(pops + " " + curState.cost + " " + frontier.size());
-            }
+//            if (pops % 20000 == 0) {
+//                System.out.println(pops + " " + curState.cost + " " + frontier.size());
+//            }
             if (curState.isSolved()) {
                 System.out.println("bfs2=" + pops);
                 return curState;
