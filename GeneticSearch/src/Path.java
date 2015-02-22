@@ -21,7 +21,7 @@ public class Path {
     private double cost;
 
     public Path(){
-        cost = 999999999d;
+        cost = Double.MAX_VALUE;
         legs = new LinkedList<Leg>();
     }
 
@@ -76,11 +76,10 @@ public class Path {
                 x += Math.cos(leg.angle);
                 y -= Math.sin(leg.angle);
                 if (tempX != (int) x || tempY != (int) y) { //if we've traveled to a new pixel
-                    int legCost = terrain.getCost(x, y);
-                    if(legCost == Terrain.INVALID_COST){
+                    if(!terrain.isValidLocation(x, y)){
                         return false;
                     }
-                    c += legCost;
+                    c+= terrain.getCost(x, y);
                 }
             }
         }
@@ -148,7 +147,7 @@ public class Path {
     //a valid path. Pretty sure rounding shit is wrong.
     public static Path mate(Path p1, Path p2){
         Path child = new Path();
-        double segment = .5; //RandomGenerator.randDouble(1);
+        double segment = RandomGenerator.randDouble(1);
         try{
             if(!p1.legs.isEmpty()){
                 for(int i = 0; i <= (int)(p1.legs.size()*segment); i++){

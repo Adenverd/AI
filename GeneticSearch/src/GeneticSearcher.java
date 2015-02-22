@@ -39,23 +39,23 @@ public class GeneticSearcher {
             int c = RandomGenerator.randInt(0, population.size() - 1);
             Path path = population.get(c);
             double d = RandomGenerator.randDouble(1d);
-            if (d < .1) {
+            if (d < .05) {
                 adds++;
                 if(!path.addRandomLeg()){
                     replacePathWithRandomMate(path);
                 }
             }
-            else if (d < .15) {
+            else if (d < .1) {
                 drops++;
                 if (!path.dropRandomLeg()) {
                     replacePathWithRandomMate(path);
                 }
-            } else if (d < .2) {
+            } else if (d < .15) {
                 mutateAngles++;
                 if(!path.mutateRandomAngle()){
                     replacePathWithRandomMate(path);
                 }
-            } else if (d < .25) {
+            } else if (d < .2) {
                 mutateSteps++;
                 if(!path.mutateRandomSteps()){
                     replacePathWithRandomMate(path);
@@ -66,7 +66,7 @@ public class GeneticSearcher {
                     c2 = RandomGenerator.randInt(0, population.size() - 1);
                 }
                 Path path2 = population.get(c2);
-                Path weakest = Path.tournament(path, path2, .001);
+                Path weakest = Path.tournament(path, path2, .05);
                 replacePathWithRandomMate(weakest);
                 fights++;
             }
@@ -112,18 +112,17 @@ public class GeneticSearcher {
     public static void replacePathWithRandomMate(Path replace) {
         Path path, path1, path2;
         population.remove(replace);
-        int c1 = RandomGenerator.randInt(0, population.size() - 1);
-        int c2 = RandomGenerator.randInt(0, population.size() - 1);
-        while (c2 == c1) {
-            c2 = RandomGenerator.randInt(0, population.size() - 1);
-        }
+        do{
+            int c1 = RandomGenerator.randInt(0, population.size() - 1);
+            int c2 = RandomGenerator.randInt(0, population.size() - 1);
+            while (c2 == c1) {
+                c2 = RandomGenerator.randInt(0, population.size() - 1);
+            }
 
-        path1 = population.get(c1);
-        path2 = population.get(c2);
-        path = Path.mate(path1, path2);
-        if (!path.travel()) {
-            path = new Path();
-        }
+            path1 = population.get(c1);
+            path2 = population.get(c2);
+            path = Path.mate(path1, path2);
+        } while(!path.travel());
 
         population.add(path);
     }

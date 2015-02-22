@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da224e4d-de9f-4655-817f-cf68c82fd883" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneticSearch/src/paths.png" />
-      <change type="MOVED" beforePath="C:\projects\AI\GeneticSearch\src\leg.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/Leg.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GeneticSearch/GeneticSearcher.class" afterPath="$PROJECT_DIR$/out/production/GeneticSearch/GeneticSearcher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GeneticSearch/Leg.class" afterPath="$PROJECT_DIR$/out/production/GeneticSearch/Leg.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GeneticSearch/Path.class" afterPath="$PROJECT_DIR$/out/production/GeneticSearch/Path.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GeneticSearch/Terrain.class" afterPath="$PROJECT_DIR$/out/production/GeneticSearch/Terrain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneticSearch/src/Path.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/Path.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneticSearch/src/Terrain.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/Terrain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,14 +95,14 @@
             <file leaf-file-name="Path.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Path.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.108050846" vertical-offset="0" max-vertical-offset="2975">
-                    <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+                  <state vertical-scroll-proportion="0.64830506" vertical-offset="1887" max-vertical-offset="2958">
+                    <caret line="149" column="25" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#3565#3566#0" expanded="true" />
-                      <element signature="e#3611#3612#0" expanded="true" />
-                      <element signature="e#3681#3682#0" expanded="true" />
-                      <element signature="e#3727#3728#0" expanded="true" />
+                      <element signature="e#3526#3527#0" expanded="true" />
+                      <element signature="e#3572#3573#0" expanded="true" />
+                      <element signature="e#3642#3643#0" expanded="true" />
+                      <element signature="e#3688#3689#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -130,8 +122,8 @@
       <file leaf-file-name="GeneticSearcher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42021278" vertical-offset="647" max-vertical-offset="2550">
-              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state vertical-scroll-proportion="1.718085" vertical-offset="0" max-vertical-offset="2533">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -332,38 +324,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="U" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeneticSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeneticSearch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -752,16 +712,16 @@
       <workItem from="1424565188377" duration="4019000" />
       <workItem from="1424572629508" duration="10026000" />
       <workItem from="1424582678265" duration="12886000" />
-      <workItem from="1424595658959" duration="11671000" />
+      <workItem from="1424595658959" duration="12623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78519000" />
+    <option name="totallyTimeSpent" value="79471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -777,7 +737,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.60027856" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.60027856" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275488" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -827,7 +787,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/GeneticSearch/src/Path.java</url>
-          <line>163</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="225" />
         </line-breakpoint>
@@ -845,15 +805,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/GeneticSearch/src/Path.java</url>
-          <line>106</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="263" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="269" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1245,22 +1199,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Path.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.108050846" vertical-offset="0" max-vertical-offset="2975">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.64830506" vertical-offset="1887" max-vertical-offset="2958">
+          <caret line="149" column="25" selection-start-line="149" selection-start-column="25" selection-end-line="149" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3565#3566#0" expanded="true" />
-            <element signature="e#3611#3612#0" expanded="true" />
-            <element signature="e#3681#3682#0" expanded="true" />
-            <element signature="e#3727#3728#0" expanded="true" />
+            <element signature="e#3526#3527#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
+            <element signature="e#3642#3643#0" expanded="true" />
+            <element signature="e#3688#3689#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42021278" vertical-offset="647" max-vertical-offset="2550">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state vertical-scroll-proportion="1.718085" vertical-offset="0" max-vertical-offset="2533">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
