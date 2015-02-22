@@ -40,6 +40,6 @@ public class Terrain {
             Color c = new Color(image.getRGB((int) x, (int) y));
             return c.getGreen();
         }
-        return Integer.MAX_VALUE;
+        throw new RuntimeException("Can't get cost of invalid location!");
     }
 }

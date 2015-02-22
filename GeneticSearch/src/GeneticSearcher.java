@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,50 +16,50 @@ public class GeneticSearcher {
         try{
             go();
         }catch (RuntimeException e){
-            System.out.println(e.getStackTrace());
+            e.printStackTrace();
         }
 
     }
 
     public static void go() {
         int events = 0;
-        int n = 10000;
+        int n = 100000;
         int adds = 0, drops = 0, mutateAngles = 0, mutateSteps = 0, mates = 0, fights = 0;
         while (true) {
             int c = RandomGenerator.randInt(0, 29);
             Path path = population.get(c);
             double d = RandomGenerator.randDouble(1d);
-            if (d < .3) {
+            if (d < .1) {
                 adds++;
                 path.addRandomLeg();
             }
-            else if (d < .4) {
+            else if (d < .1001) {
                 drops++;
                 path.dropRandomLeg();
-            } else if (d < .5) {
+            } else if (d < .3) {
                 mutateAngles++;
                 path.mutateRandomAngle();
-            } else if (d < .6) {
+            } else if (d < .4) {
                 mutateSteps++;
                 path.mutateRandomSteps();
-            } else {
+            } else if (d < .45){
                 int c2 = RandomGenerator.randInt(0, 29);
                 while (c2 == c) {
                     c2 = RandomGenerator.randInt(0, 29);
                 }
                 Path path2 = population.get(c2);
-                population.remove(Path.getHighestCost(path, path2));
-                population.add(mateRandom());
+                Path weakest = Path.tournament(path, path2, .05);
+                if(weakest != null){
+                    population.remove(weakest);
+                    population.add(mateRandom());
+                }
                 fights++;
-
             }
             events++;
 
             if (events % n == 0) {
                 double bestFitness = findLowestCost();
-                if(bestFitness == 0.0){
-                    int i = 3; //lolwat
-                }
+
                 System.out.println(events + "\t" + bestFitness);
             }
         }
@@ -68,7 +67,9 @@ public class GeneticSearcher {
 
     private static double findLowestCost() {
         double bestFitness = Double.MAX_VALUE;
-        for (Path c : population){
+        for (int i = 0; i < population.size(); i++){
+            Path c = population.get(i);
+            //c.travel();
             double fitness = c.getCost();
             if (fitness < bestFitness){
                 bestFitness = c.getCost();
@@ -92,7 +93,7 @@ public class GeneticSearcher {
         return best;
     }
 
-    private static Path mateRandom(){
+    public static Path mateRandom(){
         int c1 = RandomGenerator.randInt(0, population.size() - 1);
         int c2 = RandomGenerator.randInt(0, population.size() - 1);
         while (c2 == c1){
@@ -102,6 +103,12 @@ public class GeneticSearcher {
         Path path1 = population.get(c1);
         Path path2 = population.get(c2);
 
-        return Path.mate(path1, path2);
+        Path path = Path.mate(path1, path2);
+        path.travel();
+        return path;
+    }
+
+    public static void removePath(Path path){
+        population.remove(path);
     }
 }

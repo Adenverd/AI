@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da224e4d-de9f-4655-817f-cf68c82fd883" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneticSearch/src/Leg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneticSearch/src/Path.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GeneticSearch/src/Path_DEPRECATED.java" />
-      <change type="DELETED" beforePath="C:\projects\AI\GeneticSearch\src\Chromosome.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/U/RandomGenerator.class" afterPath="$PROJECT_DIR$/out/production/U/RandomGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/U/src/RandomGenerator.java" afterPath="$PROJECT_DIR$/U/src/RandomGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneticSearch/src/Path.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/Path.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GeneticSearch/src/Terrain.java" afterPath="$PROJECT_DIR$/GeneticSearch/src/Terrain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,6 +18,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AI$GeneticSearcher.coverage" NAME="GeneticSearcher Coverage Results" MODIFIED="1424594473386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -78,8 +75,8 @@
             <file leaf-file-name="Leg.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Leg.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.03601695" vertical-offset="0" max-vertical-offset="944">
-                    <caret line="2" column="27" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <state vertical-scroll-proportion="0.090042375" vertical-offset="0" max-vertical-offset="944">
+                    <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                     <folding>
                       <element signature="e#283#284#0" expanded="true" />
                       <element signature="e#342#343#0" expanded="true" />
@@ -111,12 +108,12 @@
             <file leaf-file-name="Path.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Path.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-0.49470338" vertical-offset="943" max-vertical-offset="1887">
-                    <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+                  <state vertical-scroll-proportion="0.45974576" vertical-offset="926" max-vertical-offset="2176">
+                    <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#452#453#0" expanded="true" />
-                      <element signature="e#479#480#0" expanded="true" />
+                      <element signature="e#453#454#0" expanded="true" />
+                      <element signature="e#480#481#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -136,10 +133,12 @@
       <file leaf-file-name="GeneticSearcher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51602024" vertical-offset="408" max-vertical-offset="1921">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.41034484" vertical-offset="357" max-vertical-offset="2040">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3227#3228#0" expanded="true" />
+                <element signature="e#3266#3267#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,10 +147,11 @@
       <file leaf-file-name="Terrain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Terrain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="867">
+              <caret line="42" column="74" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
                 <element signature="e#700#701#0" expanded="true" />
               </folding>
             </state>
@@ -209,8 +209,8 @@
         <option value="$PROJECT_DIR$/GeneticSearch/src/leg.java" />
         <option value="$PROJECT_DIR$/GeneticSearch/src/Leg.java" />
         <option value="$PROJECT_DIR$/GeneticSearch/src/Path_DEPRECATED.java" />
-        <option value="$PROJECT_DIR$/GeneticSearch/src/Path.java" />
         <option value="$PROJECT_DIR$/GeneticSearch/src/Terrain.java" />
+        <option value="$PROJECT_DIR$/GeneticSearch/src/Path.java" />
         <option value="$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java" />
       </list>
     </option>
@@ -460,12 +460,14 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="GeneticSearch" />
       <envs />
+      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -744,12 +746,12 @@
       <workItem from="1424134402267" duration="2811000" />
       <workItem from="1424565188377" duration="4019000" />
       <workItem from="1424572629508" duration="10026000" />
-      <workItem from="1424582678265" duration="7924000" />
+      <workItem from="1424582678265" duration="12886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61886000" />
+    <option name="totallyTimeSpent" value="66848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -767,6 +769,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1484375" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.60027856" order="0" side_tool="false" content_ui="combo" />
@@ -817,16 +820,22 @@
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/GeneticSearch/src/Path.java</url>
-          <line>100</line>
+          <url>file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java</url>
+          <line>29</line>
           <properties />
-          <option name="timeStamp" value="183" />
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="186" />
+      <default-breakpoints>
+        <breakpoint type="java-exception">
+          <condition expression="(this instanceof java.lang.RuntimeException)" language="JAVA" custom="" />
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="201" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -840,55 +849,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AstarSearch/src/PuzzleState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="3366">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Path_DEPRECATED.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Terrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="646">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="374">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UniformCostSearch/src/UniformCostSearcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1139">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="method#coloredUniformCostSearch#0;class#UniformCostSearcher#0" expanded="false" />
-            <element signature="method#colorShortestPath#0;class#UniformCostSearcher#0" expanded="false" />
-            <element signature="method#getChildren#0;class#UniformCostSearcher#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/U/src/RandomGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="527">
@@ -1205,19 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Leg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03601695" vertical-offset="0" max-vertical-offset="944">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Path_DEPRECATED.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="3434">
@@ -1234,6 +1181,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Leg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.090042375" vertical-offset="0" max-vertical-offset="944">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Terrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="867">
+          <caret line="42" column="74" selection-start-line="42" selection-start-column="74" selection-end-line="42" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/security/AccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10412" max-vertical-offset="14705">
+          <caret line="651" column="8" selection-start-line="651" selection-start-column="8" selection-end-line="651" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5278" max-vertical-offset="12580">
+          <caret line="376" column="0" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="6128" max-vertical-offset="36295">
+          <caret line="435" column="0" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16181818" vertical-offset="7969" max-vertical-offset="13736">
+          <caret line="547" column="27" selection-start-line="547" selection-start-column="27" selection-end-line="547" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/awt/image/ComponentColorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="14526" max-vertical-offset="49606">
+          <caret line="896" column="0" selection-start-line="896" selection-start-column="0" selection-end-line="896" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/U/src/RandomGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
@@ -1245,35 +1257,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Terrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="867">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GeneticSearch/src/Path.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.49470338" vertical-offset="943" max-vertical-offset="1887">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.45974576" vertical-offset="926" max-vertical-offset="2176">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GeneticSearch/src/GeneticSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51602024" vertical-offset="408" max-vertical-offset="1921">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.41034484" vertical-offset="357" max-vertical-offset="2040">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3227#3228#0" expanded="true" />
+            <element signature="e#3266#3267#0" expanded="true" />
           </folding>
         </state>
       </provider>
