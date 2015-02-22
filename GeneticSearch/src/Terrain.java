@@ -7,6 +7,8 @@ import java.io.IOException;
 
 public class Terrain {
     public static final String inputFilePath = "GeneticSearch/src/terrain.png";
+    public static final String outputFilePath = "GeneticSearch/src/paths.png";
+    public static final int INVALID_COST = -9999;
 
     BufferedImage image;
     int right;
@@ -24,15 +26,15 @@ public class Terrain {
     }
 
     public boolean isValidLocation(double x, double y){
-        return (x >= 0 && x <= right) && (y >=0 && y <= bottom);
+        return (x >= 0 && x < right) && (y >=0 && y < bottom);
     }
 
     public int getCost(int x, int y){
         if(isValidLocation(x, y)){
-            Color c = new Color(image.getRGB(x, y));
+            Color c = new Color(image.getRGB((int) x, (int) y));
             return c.getGreen();
         }
-        return Integer.MAX_VALUE;
+        return INVALID_COST;
     }
 
     public int getCost(double x, double y){
@@ -40,6 +42,6 @@ public class Terrain {
             Color c = new Color(image.getRGB((int) x, (int) y));
             return c.getGreen();
         }
-        throw new RuntimeException("Can't get cost of invalid location!");
+        return INVALID_COST;
     }
 }

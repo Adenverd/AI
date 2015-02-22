@@ -1,3 +1,6 @@
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +10,16 @@ import java.util.List;
  */
 public class GeneticSearcher {
     public static List<Path> population;
+    public static BufferedImage output;
 
     public static void main(String[] args) throws IOException{
         population = new ArrayList<Path>(32);
+        output = null;
+        try{
+            output = ImageIO.read(new File(Terrain.outputFilePath));
+        } catch(IOException e){
+            int j = 3;
+        }
         for(int i = 0; i < 30; i++){
             population.add(new Path());
         }
@@ -23,42 +33,48 @@ public class GeneticSearcher {
 
     public static void go() {
         int events = 0;
-        int n = 100000;
+        int n = 500;
         int adds = 0, drops = 0, mutateAngles = 0, mutateSteps = 0, mates = 0, fights = 0;
         while (true) {
-            int c = RandomGenerator.randInt(0, 29);
+            int c = RandomGenerator.randInt(0, population.size() - 1);
             Path path = population.get(c);
             double d = RandomGenerator.randDouble(1d);
             if (d < .1) {
                 adds++;
-                path.addRandomLeg();
+                if(!path.addRandomLeg()){
+                    replacePathWithRandomMate(path);
+                }
             }
-            else if (d < .1001) {
+            else if (d < .15) {
                 drops++;
-                path.dropRandomLeg();
-            } else if (d < .3) {
+                if (!path.dropRandomLeg()) {
+                    replacePathWithRandomMate(path);
+                }
+            } else if (d < .2) {
                 mutateAngles++;
-                path.mutateRandomAngle();
-            } else if (d < .4) {
+                if(!path.mutateRandomAngle()){
+                    replacePathWithRandomMate(path);
+                }
+            } else if (d < .25) {
                 mutateSteps++;
-                path.mutateRandomSteps();
-            } else if (d < .45){
-                int c2 = RandomGenerator.randInt(0, 29);
+                if(!path.mutateRandomSteps()){
+                    replacePathWithRandomMate(path);
+                }
+            } else if (d < 1){
+                int c2 = RandomGenerator.randInt(0, population.size() - 1);
                 while (c2 == c) {
-                    c2 = RandomGenerator.randInt(0, 29);
+                    c2 = RandomGenerator.randInt(0, population.size() - 1);
                 }
                 Path path2 = population.get(c2);
-                Path weakest = Path.tournament(path, path2, .05);
-                if(weakest != null){
-                    population.remove(weakest);
-                    population.add(mateRandom());
-                }
+                Path weakest = Path.tournament(path, path2, .001);
+                replacePathWithRandomMate(weakest);
                 fights++;
             }
             events++;
 
             if (events % n == 0) {
                 double bestFitness = findLowestCost();
+                //drawPaths();
 
                 System.out.println(events + "\t" + bestFitness);
             }
@@ -93,22 +109,38 @@ public class GeneticSearcher {
         return best;
     }
 
-    public static Path mateRandom(){
+    public static void replacePathWithRandomMate(Path replace) {
+        Path path, path1, path2;
+        population.remove(replace);
         int c1 = RandomGenerator.randInt(0, population.size() - 1);
         int c2 = RandomGenerator.randInt(0, population.size() - 1);
-        while (c2 == c1){
+        while (c2 == c1) {
             c2 = RandomGenerator.randInt(0, population.size() - 1);
         }
 
-        Path path1 = population.get(c1);
-        Path path2 = population.get(c2);
+        path1 = population.get(c1);
+        path2 = population.get(c2);
+        path = Path.mate(path1, path2);
+        if (!path.travel()) {
+            path = new Path();
+        }
 
-        Path path = Path.mate(path1, path2);
-        path.travel();
-        return path;
+        population.add(path);
     }
 
     public static void removePath(Path path){
         population.remove(path);
+    }
+
+    public static void drawPaths(){
+        for(int i = 0; i < population.size(); i++){
+            population.get(i).draw(output);
+        }
+        File outputFile = new File(Terrain.outputFilePath);
+        try{
+            ImageIO.write(output, "png", outputFile);
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
 }
