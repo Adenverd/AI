@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class RandomGenerator {
-    private static Random random = new Random();
+    private static Random random = new Random(100);
 
     /***
      * Returns a random int between min and max, inclusive.
